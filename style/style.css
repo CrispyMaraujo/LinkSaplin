@@ -8,6 +8,16 @@ main {
     margin-top: 20px;
 }
 
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #89ff27;
+    text-decoration: underline;
+}
+
 #containerMain {
     width: 100%;
     display: flex;
@@ -30,6 +40,15 @@ main {
     height: 150px;
     border-radius: 50%;
     border: none;
+}
+
+.containerLinks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
 }
 
 .containerLinks ul {
@@ -92,15 +111,12 @@ footer > h3, footer > p {
 
 /* Responsive Design */
 @media (max-width: 1200px) {
-    body {
-        height: auto;
-    }
     .imageProfile {
-        width: 220px;
-        height: 220px;
+        width: 150px;
+        height: 150px;
     }
     .containerLinks ul {
-        width: 300px;
+        width: 600px;
     }
     .linksRedirect li > a {
         width: 90%;
@@ -112,11 +128,11 @@ footer > h3, footer > p {
 
 @media (max-width: 600px) {
     .imageProfile {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
     }
     .containerLinks ul {
-        width: 200px;
+        width: 400px;
     }
     .linksRedirect li > a {
         width: 90%;
@@ -132,7 +148,7 @@ footer > h3, footer > p {
         height: 100px;
     }
     .containerLinks ul {
-        width: 200px;
+        width: 300px;
     }
     .linksRedirect li > a {
         width: 100%;
