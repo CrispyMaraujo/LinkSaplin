@@ -1,0 +1,144 @@
+body {
+    background-color: #060606;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+main {
+    margin-top: 20px;
+}
+
+#containerMain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerProfile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.imageProfile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: none;
+}
+
+.containerLinks ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+.linksRedirect li {
+    list-style: none;
+    padding-left: 0px;
+    color: #ffffff;
+    border-radius: 25px;
+    box-shadow: rgb(25, 218, 25) 1px 1px 5px;
+    text-decoration: none;
+    padding: 10px 30px 10px 30px;
+    margin: 15px 0px 15px 0px;
+    text-align: center;
+}
+
+
+.linksRedirect li > a {
+    text-decoration: none;
+    color: #ffffff;
+    width: 400px;
+    display: inline-block;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.linksRedirect li:hover {
+    background-color: rgb(89, 255, 39);
+}
+
+.linksRedirect li > a:hover {
+    color: black;
+}
+
+.iconLinks {
+    width: 50px;
+    height: 50px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    background-color: black;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+}
+
+footer > h3, footer > p {
+    margin: 5px;
+    font-size: 1.3em
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    body {
+        height: auto;
+    }
+    .imageProfile {
+        width: 220px;
+        height: 220px;
+    }
+    .containerLinks ul {
+        width: 300px;
+    }
+    .linksRedirect li > a {
+        width: 90%;
+    }
+    footer > h3, footer > p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 600px) {
+    .imageProfile {
+        width: 100px;
+        height: 100px;
+    }
+    .containerLinks ul {
+        width: 200px;
+    }
+    .linksRedirect li > a {
+        width: 90%;
+    }
+    footer > h3, footer > p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 400px) {
+    .imageProfile {
+        width: 100px;
+        height: 100px;
+    }
+    .containerLinks ul {
+        width: 200px;
+    }
+    .linksRedirect li > a {
+        width: 100%;
+    }
+    footer > h3, footer > p {
+        font-size: 0.8em;
+    }
+}
+
